@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    </meta>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    </meta>
+    <title>Sameer Chauhan</title>
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Sameer Chauhan | Portfolio">
+    <meta property="og:url" content="https://sameerchauhan.dev">
+    <meta property="og:image" content="https://sameerchauhan.dev/assets/img/ogbg.png">
+    <meta property="og:description"
+        content="Hi, I'm Sameer 🚀, a computer science student with a strong passion for solving real-world problems and a particular interest in Web Development.">
+    <meta property="profile:first_name" content="Sameer">
+    <meta property="profile:last_name" content="Chauhan">
+    <meta property="profile:username" content="sameerchauhan.dev">
+    <meta name="description" content="Hi, I'm Sameer 🚀, a computer science student with a strong passion for solving real-world problems and a particular interest in Web Development. Want to know more about me? Check out my portfolio and learn more!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="assets/img/profile.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        /*body {
+            background-image: url("assets/img/hero-bg.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'DM Sans', sans-serif;
+            font-family: 'Rubik', sans-serif;
+        }*/
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+            background-color: black;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("assets/img/hero-bg.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateZ(0);
+            background-color: black;
+        }
+
+        .drone {
+            animation: levitate 2s ease-in-out infinite;
+        }
+
+        @keyframes levitate {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+    <img src="assets/img/hero-drone.webp"
+        class="drone fixed top-8 right-8 min-[1024px]:right-[400px] min-[1024px]:w-[300px] w-[200px]" />
+    <div class="overflow-x-hidden overflow-y-hidden relative w-full">
+        <div class="max-w-[700px] w-11/12 flex flex-col mx-auto mt-[80px]">
+            <div>
+                <img src="assets/img/profile.png" alt="profile" class="w-[100px] mx-auto" />
+            </div>
+            <div>
+                <h1 class="lg:text-3xl text-2xl font-bold text-center mt-4 text-white">Sameer Chauhan</h1>
+                <p class="text-center text-white mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm">Passionate
+                    Front-End Web Developer, Aspiring Full Stack Developer. Empowering Through Code, Collaboration, and
+                    Creativity!</p>
+            </div>
+            <div class="flex flex-row gap-[30px] mx-auto mt-[20px]">
+                <a class="hover:scale-[1.2] hover:duration-300" target="_blank" href="https://twitter.com/samunicode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="hover:scale-[1.2] hover:duration-300" target="_blank" href="https://github.com/samunicode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                </a>
+                <a class="hover:scale-[1.2] hover:duration-300" target="_blank" href="https://linkedin.com/in/cbsameer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a class="hover:scale-[1.2] hover:duration-300" target="_blank"
+                    href="https://www.buymeacoffee.com/samunicode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                        <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                        <line x1="6" y1="2" x2="6" y2="4"></line>
+                        <line x1="10" y1="2" x2="10" y2="4"></line>
+                        <line x1="14" y1="2" x2="14" y2="4"></line>
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-[40px]">
+                <p
+                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm tracking-[4px] text-gray-300">
+                    FEATURED LINKS</p>
+            </div>
+            <div class="flex flex-col mt-[20px] gap-[20px] lg:w-9/12 w-full mx-auto">
+                <button onclick="window.location.href = 'https://sameerchauhan.dev/';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">Personal
+                        Website</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" id="home">
+                            <g fill="none" fill-rule="evenodd">
+                                <circle cx="20" cy="20" r="20" fill="#FFF"></circle>
+                                <path fill="#FA9013"
+                                    d="M27,11.3703216 L27,9.6 C27,9.26862915 27.2686292,9 27.6,9 L29.4,9 C29.7313708,9 30,9.26862915 30,9.6 L30,13.8012149 L33.1581749,16.360277 C33.3126502,16.4854479 33.3364061,16.712146 33.2112351,16.8666213 C33.1428812,16.9509778 33.0401066,16.9999792 32.9315328,16.9999792 L30.5,16.9999792 L30.5,29.5 C30.5,30.0522847 30.0522847,30.5 29.5,30.5 L10.5,30.5 C9.94771525,30.5 9.5,30.0522847 9.5,29.5 L9.5,16.9999792 L7.06618272,16.9999792 C6.86736021,16.9999792 6.70618272,16.8388017 6.70618272,16.6399792 C6.70618272,16.5314054 6.75518412,16.4286308 6.8395406,16.360277 L19.6211209,6.00339113 C19.8413356,5.8249517 20.15638,5.8249517 20.3765946,6.00339113 L27,11.3703216 Z">
+                                </path>
+                                <path fill="#FFB22C"
+                                    d="M20.3746773,9.14372547 L27.8857787,15.0676118 C27.9579098,15.1245004 28,15.2113018 28,15.303167 L28,27.4 C28,27.7313708 27.7313708,28 27.4,28 L12.6,28 C12.2686292,28 12,27.7313708 12,27.4 L12,15.4079648 C12,15.3169561 12.0413127,15.2308675 12.1123102,15.1739295 L19.6277403,9.14676529 C19.845656,8.97200299 20.1553463,8.97074264 20.3746773,9.14372547 Z">
+                                </path>
+                                <path fill="#FFCD59"
+                                    d="M20.3684227,12.6244849 L25.3787552,16.3418636 C25.4550283,16.3984539 25.5,16.4878184 25.5,16.5827922 L25.5,24.9 C25.5,25.2313708 25.2313708,25.5 24.9,25.5 L15.1,25.5 C14.7686292,25.5 14.5,25.2313708 14.5,24.9 L14.5,16.8292927 C14.5,16.7373662 14.542146,16.650514 14.6143583,16.5936294 L19.639629,12.6350156 C19.8523495,12.4674468 20.1509494,12.4631322 20.3684227,12.6244849 Z">
+                                </path>
+                                <path fill="#FFE780"
+                                    d="M20.1803973,15.8780301 L22.8803952,17.9099881 C22.9557045,17.9666642 23,18.0554379 23,18.1496912 L23,22.7 C23,22.8656854 22.8656854,23 22.7,23 L17.3,23 C17.1343146,23 17,22.8656854 17,22.7 L17,18.1496913 C17,18.055438 17.0442956,17.9666642 17.119605,17.9099881 L19.8196071,15.8780299 C19.9264344,15.7976342 20.07357,15.7976342 20.1803973,15.8780301 Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </button>
+                <button onclick="window.location.href = 'https://sameerchauhan.dev/resume';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">Resume
+                        & CV</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40"
+                            height="40" viewBox="0 0 40 40" id="reminders">
+                            <defs>
+                                <circle id="a" cx="20" cy="20" r="20"></circle>
+                                <path id="c"
+                                    d="M60,41.3159959 C60,42.0292836 60,42.7425714 59.9958172,43.4568929 C59.9926801,44.0575018 59.9853603,44.6581108 59.9686291,45.2587198 C59.9330755,46.566414 59.8546484,47.887547 59.6193669,49.1807687 C59.3809484,50.4946654 58.9919498,51.7175921 58.3760353,52.9115737 C57.7726692,54.0838467 56.984215,55.1568795 56.0430893,56.0872549 C55.1019636,57.0176302 54.0154862,57.7981117 52.8296678,58.3945857 C51.6229356,59.0024309 50.3869238,59.3880198 49.0578452,59.6237149 C47.7486348,59.8563087 46.413282,59.93384 45.0894318,59.9689875 C42.5442096,60 41.8226799,60 41.1011502,60 L27.1880758,60 L18.8998955,60 C16.1267117,59.99173 15.5191628,59.9855275 14.9116139,59.9689875 C13.5877637,59.93384 12.2524109,59.8563087 10.9432005,59.6237149 C9.61412189,59.3880198 8.37811013,59.0024309 7.17137785,58.3945857 C5.98451377,57.7981117 4.89908212,57.0176302 3.95795642,56.0872549 C3.01683072,55.1568795 2.22837652,54.0838467 1.62396468,52.9115737 C1.00909589,51.7175921 0.620097268,50.4946654 0.380633062,49.1807687 C0.145351636,47.887547 0.0679701896,46.566414 0.0324165519,45.2587198 C0.0156854284,44.6581108 0.00836556179,44.0575018 0.00522847612,43.4568929 C-9.40559449e-14,42.7425714 0,42.0292836 0,41.3159959 L0,33.1224905 L0,26.8775095 L0,18.6840041 C0,17.9707164 0,17.2563949 0.00522847612,16.5441409 C0.00836556179,15.9424982 0.0156854284,15.3418892 0.0324165519,14.7412802 C0.0679701896,13.4325523 0.145351636,12.112453 0.380633062,10.8181976 C0.620097268,9.50430087 1.00909589,8.28240794 1.62396468,7.08842627 C2.22837652,5.9151196 3.01683072,4.84208672 3.95795642,3.91274514 C4.89908212,2.98133606 5.98451377,2.20188828 7.17137785,1.60541432 C8.37811013,0.997569104 9.61412189,0.611980217 10.9432005,0.376285134 C12.2524109,0.143691301 13.5877637,0.0661600235 14.9116139,0.031012511 C17.4568361,0 18.1783658,0 18.8998955,0 L27.1880758,0 L40.5092867,0 L32.8119242,0.0031012511 L41.1011502,0 C43.8732883,0.00827000293 44.4808372,0.0144725051 45.0894318,0.031012511 C46.413282,0.0661600235 47.7486348,0.143691301 49.0578452,0.376285134 C50.3869238,0.611980217 51.6229356,0.997569104 52.8296678,1.60541432 C54.0154862,2.20188828 55.1019636,2.98133606 56.0430893,3.91274514 C56.984215,4.84208672 57.7726692,5.9151196 58.3760353,7.08842627 C58.9919498,8.28240794 59.3809484,9.50430087 59.6193669,10.8181976 C59.8546484,12.112453 59.9330755,13.4325523 59.9686291,14.7412802 C59.9853603,15.3418892 59.9926801,15.9424982 59.9958172,16.5441409 C60,17.2563949 60,17.9707164 60,18.6840041 L60,26.8775095 L60,33.1224905 L60,41.3159959 Z">
+                                </path>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <mask id="b" fill="#fff">
+                                    <use xlink:href="#a"></use>
+                                </mask>
+                                <use fill="#FFF" xlink:href="#a"></use>
+                                <g mask="url(#b)">
+                                    <g transform="translate(10 -10)">
+                                        <mask id="d" fill="#fff">
+                                            <use xlink:href="#c"></use>
+                                        </mask>
+                                        <use fill="#FFF" xlink:href="#c"></use>
+                                        <g mask="url(#d)">
+                                            <g transform="translate(4.5 12.5)">
+                                                <circle cx="5.5" cy="5" r="4.5" stroke="#FF9500"></circle>
+                                                <circle cx="5.5" cy="5" r="3" fill="#FF9500"></circle>
+                                            </g>
+                                        </g>
+                                        <g mask="url(#d)">
+                                            <g transform="translate(4.5 25)">
+                                                <circle cx="5.5" cy="5" r="4.5" stroke="#2094FA"></circle>
+                                                <circle cx="5.5" cy="5" r="3" fill="#2094FA"></circle>
+                                            </g>
+                                        </g>
+                                        <g mask="url(#d)">
+                                            <g transform="translate(4.5 37.5)">
+                                                <circle cx="5.5" cy="5" r="4.5" stroke="#04DE71"></circle>
+                                                <circle cx="5.5" cy="5" r="3" fill="#04DE71"></circle>
+                                            </g>
+                                        </g>
+                                        <rect width="41" height="1" x="5" y="23.5" fill="#C7C7CC" mask="url(#d)"></rect>
+                                        <rect width="41" height="1" x="5" y="36" fill="#C7C7CC" mask="url(#d)"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+            <div class="mt-[40px]">
+                <p
+                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm tracking-[4px] text-gray-300">
+                    SOCIAL LINKS</p>
+            </div>
+            <div class="flex flex-col mt-[20px] gap-[20px] lg:w-9/12 w-full mx-auto">
+                <button onclick="window.location.href = 'https://github.com/samunicode';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">GitHub</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img width="40" src="assets/img/git.webp" alt="GitHub">
+                    </div>
+                </button>
+                <button onclick="window.location.href = 'https://twitter.com/samunicode';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto ">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">Twitter</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img class="bg-white rounded-full" width="40" src="assets/img/twitter.svg" alt="Twitter">
+                    </div>
+                </button>
+                <button onclick="window.location.href = 'https://linkedin.com/in/cbsameer';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto ">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">LinkedIn</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img class="bg-white rounded-full" width="40" src="assets/img/linkedin.svg" alt="LinkedIn">
+                    </div>
+                </button>
+                <button onclick="window.location.href = 'https://sameerchauhan.dev/#blog';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto ">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">Medium</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img class="bg-white rounded-full" width="40" src="assets/img/medium.svg" alt="LinkedIn">
+                    </div>
+                </button>
+            </div>
+            <div class="mt-[40px]">
+                <p
+                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm tracking-[4px] text-gray-300">
+                    PROJECT LINKS</p>
+            </div>
+            <div class="flex flex-col mt-[20px] gap-[20px] lg:w-9/12 w-full mx-auto">
+                <button onclick="window.location.href = 'https://mujcentral.in/';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">MUJ
+                        Central</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img width="40" src="assets/img/MUJC.png" alt="MUJ Central">
+                    </div>
+                </button>
+                <button onclick="window.location.href = 'https://shortify.live/';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto ">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">Shortify</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img class="bg-white rounded-full" width="40" src="assets/img/shortify.png" alt="Shortify">
+                    </div>
+                </button>
+                <button onclick="window.location.href = 'https://hostinger-clone-sameer.vercel.app/';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto ">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">Hostinger
+                        Clone</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img class="bg-white rounded-full" width="40" src="assets/img/hostinger.svg" alt="Hostinger">
+                    </div>
+                </button>
+                <button onclick="window.location.href = 'https://music-player-red-one.vercel.app/';"
+                    class="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-[#FFFFFF] hover:border-2 rounded-full hover:bg-transparent px-8 py-7 font-medium text-white transition duration-300 ease-out md:w-auto ">
+                    <span
+                        class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-transparent text-white duration-300 group-hover:translate-x-0">
+                        <svg class="h-5 w-5" fill="none" strokeWidth="4" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span
+                        class="ease absolute flex h-full w-full transform items-center justify-center text-black transition-all duration-300 group-hover:translate-x-full">Elegant
+                        Music Player</span>
+                    <div id="icon" class="absolute left-2 w-[50px] drop-shadow-lg">
+                        <img class="bg-white rounded-full" width="40" src="assets/img/music.png" alt="LinkedIn">
+                    </div>
+                </button>
+                <div class="flex flex-col gap-[5px] mt-8 mb-8">
+                    <p class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[16px] text-sm text-gray-300">
+                        Crafted with ❤️ by <span class="font-semibold">Sameer Chauhan</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
