@@ -3,6 +3,7 @@ align="center">
   <img width="75%" src="https://github.com/samunicode/Lynkly/assets/91241984/d2d1e156-dab5-4158-8d99-d74ba8217d18" />
   <img width="23%" src="https://github.com/samunicode/Lynkly/assets/91241984/f40c260e-fd34-4447-afd2-c199473cc0c0" />
 </p>
+
 # Lynkly
 
 Lynkly is a clone of the popular Linktree service, built using Tailwind CSS, HTML, and CSS. This project aims to provide a simple and customizable solution for creating your own personal landing page with multiple links.
