@@ -1,5 +1,6 @@
-<p align="center">
-  <img width="80%" src="https://github.com/samunicode/Lynkly/assets/91241984/6bdb62ed-ea6f-44eb-a846-c7f782dc5ea0" />
+<p
+align="center">
+  <img width="80%" src="https://github.com/samunicode/Lynkly/assets/91241984/d2d1e156-dab5-4158-8d99-d74ba8217d18" />
   <img width="18%" src="https://github.com/samunicode/Lynkly/assets/91241984/f40c260e-fd34-4447-afd2-c199473cc0c0" />
 </p>
 # Lynkly
