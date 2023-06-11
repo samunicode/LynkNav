@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,8 @@
     <meta property="profile:first_name" content="Sameer">
     <meta property="profile:last_name" content="Chauhan">
     <meta property="profile:username" content="sameerchauhan.dev">
-    <meta name="description" content="Hi, I'm Sameer 🚀, a computer science student with a strong passion for solving real-world problems and a particular interest in Web Development. Want to know more about me? Check out my portfolio and learn more!">
+    <meta name="description"
+        content="Hi, I'm Sameer 🚀, a computer science student with a strong passion for solving real-world problems and a particular interest in Web Development. Want to know more about me? Check out my portfolio and learn more!">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="assets/img/profile.png" type="image/png">
@@ -28,6 +30,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <style>
         body {
@@ -73,22 +76,207 @@
     <img src="assets/img/hero-drone.webp"
         class="drone fixed top-8 right-8 min-[1024px]:right-[400px] min-[1024px]:w-[300px] w-[200px]" />
     <div class="overflow-x-hidden overflow-y-hidden relative w-full">
-        <div class="max-w-[700px] w-11/12 flex flex-col mx-auto lg:mt-[80px] mt-[30px]">
+        <div class="max-w-[700px] w-11/12 flex flex-col mx-auto lg:mt-[80px] mt-[30px] relative">
             <div class="flex flex-row justify-start lg:ml-[85px]">
-                <div class="bg-black rounded-full w-fit p-2 backdrop-blur-sm bg-opacity-30 border-[0.003rem]">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_156_54)">
-                            <path d="M19 13V15.3077C19 17.3469 17.3469 19 15.3077 19H8.69231C6.65311 19 5 17.3469 5.00001 15.3077L5.00001 13" stroke="#ffffff" stroke-width="1.29231" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M8.25 8.76929L12 5.01929L15.75 8.76929" stroke="#ffffff" stroke-width="1.29231" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M12 5.01929V14.2501" stroke="#ffffff" stroke-width="1.29231" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_156_54">
-                                <rect width="24" height="24" fill="white"></rect>
-                            </clipPath>
-                        </defs>
-                    </svg>
+                <div class="inline-block z-50">
+                    <div id="dropdownButton"
+                        class="bg-black rounded-full w-fit p-2 backdrop-blur-sm bg-opacity-30 border-[0.003rem] hover:scale-[1.08] hover:duration-300 cursor-pointer z-50">
+                        <!-- Your SVG code here -->
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_156_54)">
+                                <path
+                                    d="M19 13V15.3077C19 17.3469 17.3469 19 15.3077 19H8.69231C6.65311 19 5 17.3469 5.00001 15.3077L5.00001 13"
+                                    stroke="#ffffff" stroke-width="1.29231" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M8.25 8.76929L12 5.01929L15.75 8.76929" stroke="#ffffff" stroke-width="1.29231"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12 5.01929V14.2501" stroke="#ffffff" stroke-width="1.29231"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_156_54">
+                                    <rect width="24" height="24" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div id="dropdownMenu" class="absolute mx-auto mt-2 lg:w-7/12 w-full bg-white shadow-lg hidden"
+                        style="border-radius:20px;">
+                        <div class="flex flex-col py-[30px]">
+                            <h1 class="text-center font-semibold text-lg pb-[20px]">Share this Profile Link</h1>
+                            <div class="shadow-xl w-9/12 mx-auto mb-[30px]"
+                                style="border:1px solid #f6f4f4; border-radius:20px;">
+                                <img class="mx-auto p-8" src="assets/img/qrsam.png" alt="QR">
+                            </div>
+                            <a target="_blank"
+                                href="https://twitter.com/intent/tweet?text=Check%20out%20this%20profile%20link%21-%20https%3A%2F%2Fsameerchauhan.in%2F">
+                                <div class="flex flex-row mx-auto w-10/12 justify-between items-center hover:bg-[#f6f4f4] px-[8px] mb-[10px]"
+                                    style="border-radius:10px;">
+                                    <div class="flex flex-row gap-[8px] my-auto items-center px-[5px] py-[5px]">
+                                        <div class="w-fit h-fit p-2 rounded-full border-1 bg-white"
+                                            style="border:1px solid #dddddd;">
+                                            <svg width="20" height="20" viewBox="0 0 20 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.2896 17.126C13.8368 17.126 17.9648 10.8732 17.9648 5.45082C17.9648 5.27322 17.9648 5.09642 17.9528 4.92042C18.7559 4.33955 19.4491 3.62033 20 2.79642C19.2512 3.12842 18.4567 3.34605 17.6432 3.44202C18.4998 2.92926 19.141 2.12267 19.4472 1.17242C18.6417 1.65043 17.7605 1.98728 16.8416 2.16842C16.2229 1.51057 15.4047 1.07496 14.5135 0.928992C13.6223 0.783027 12.7078 0.93485 11.9116 1.36097C11.1154 1.78708 10.4819 2.46373 10.109 3.28621C9.73605 4.10869 9.64462 5.03114 9.8488 5.91082C8.21741 5.82899 6.62146 5.40501 5.16455 4.66643C3.70763 3.92784 2.4223 2.89114 1.392 1.62362C0.867274 2.52695 0.70656 3.59631 0.942583 4.61397C1.17861 5.63164 1.79362 6.52108 2.6624 7.10122C2.00936 7.08209 1.37054 6.90592 0.8 6.58762V6.63962C0.800259 7.587 1.12821 8.50512 1.72823 9.23826C2.32824 9.9714 3.16338 10.4744 4.092 10.662C3.4879 10.8268 2.85406 10.8509 2.2392 10.7324C2.50151 11.5477 3.01202 12.2606 3.69937 12.7715C4.38671 13.2825 5.21652 13.5658 6.0728 13.582C5.22203 14.2508 4.24776 14.7452 3.20573 15.037C2.16369 15.3289 1.07435 15.4124 0 15.2828C1.87653 16.487 4.05994 17.1258 6.2896 17.1228"
+                                                    fill="#1DA1F2"></path>
+                                            </svg>
+                                        </div>
+                                        <h1 class="text-center text-md font-normal" style="font-weight:500">Share on
+                                            Twitter
+                                        </h1>
+                                    </div>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.70714 1.29297L5.06069 1.64652L11.0607 7.64652V8.35363L5.06069 14.3536L4.70714 14.7072L4.00003 14.0001L4.35358 13.6465L10 8.00008L4.35358 2.35363L4.00003 2.00008L4.70714 1.29297Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/sharing/share-offsite/?url=https://sameerchauhan.in/">
+                                <div class="flex flex-row mx-auto w-10/12 justify-between items-center hover:bg-[#f6f4f4] px-[8px] mb-[10px]"
+                                    style="border-radius:10px;">
+                                    <div class="flex flex-row gap-[8px] my-auto items-center px-[5px] py-[5px]">
+                                        <div class="w-fit h-fit p-2 rounded-full border-1 bg-white"
+                                            style="border:1px solid #dddddd;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 16 16" id="linkedin">
+                                                <g fill="#1976D2">
+                                                    <path
+                                                        d="M0 5h3.578v11H0zM13.324 5.129c-.038-.012-.074-.025-.114-.036a2.32 2.32 0 0 0-.145-.028A3.207 3.207 0 0 0 12.423 5c-2.086 0-3.409 1.517-3.845 2.103V5H5v11h3.578v-6s2.704-3.766 3.845-1v7H16V8.577a3.568 3.568 0 0 0-2.676-3.448z">
+                                                    </path>
+                                                    <circle cx="1.75" cy="1.75" r="1.75"></circle>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <h1 class="text-center text-md font-normal" style="font-weight:500">Share on
+                                            LinkedIn</h1>
+                                    </div>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.70714 1.29297L5.06069 1.64652L11.0607 7.64652V8.35363L5.06069 14.3536L4.70714 14.7072L4.00003 14.0001L4.35358 13.6465L10 8.00008L4.35358 2.35363L4.00003 2.00008L4.70714 1.29297Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?text=Check%20out%20this%20profile%20link!-%20https%3A%2F%2Fsameerchauhan.in%2F">
+                                <div class="flex flex-row mx-auto w-10/12 justify-between items-center hover:bg-[#f6f4f4] px-[8px] mb-[10px]"
+                                    style="border-radius:10px;">
+                                    <div class="flex flex-row gap-[8px] my-auto items-center px-[5px] py-[5px]">
+                                        <div class="w-fit h-fit p-2 rounded-full border-1 bg-white"
+                                            style="border:1px solid #dddddd;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 128 128" id="whatsapp">
+                                                <path fill="#26cc64"
+                                                    d="M64.2 6a57.92 57.92 0 0 0-49.35 88.37L5.8 122l33.64-5.61A58 58 0 1 0 64.2 6Z">
+                                                </path>
+                                                <path fill="#26cc64"
+                                                    d="M5.8 124a2 2 0 0 1-1.9-2.62l8.76-26.76A60 60 0 1 1 64.2 124a59.39 59.39 0 0 1-25-5.53l-33 5.5a1.84 1.84 0 0 1-.4.03Zm33.64-9.61a2 2 0 0 1 .86.2A55.5 55.5 0 0 0 64.2 120a56.14 56.14 0 1 0-47.65-26.68 2 2 0 0 1 .2 1.67l-8 24.49 30.38-5.06a1.84 1.84 0 0 1 .31-.03Z">
+                                                </path>
+                                                <path fill="#fff"
+                                                    d="M29.1 44.58A55.37 55.37 0 0 0 84.37 100h1.81A13.86 13.86 0 0 0 99 83.47a13.58 13.58 0 0 0-.8-2.63L75 77.14a13.74 13.74 0 0 0-3.19 7.06 41.63 41.63 0 0 1-26.58-26 13.78 13.78 0 0 0 6.83-3.2l-3.65-23.12a12.75 12.75 0 0 0-3.2-1 13.27 13.27 0 0 0-2.29-.2 13.84 13.84 0 0 0-13.82 13.9Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <h1 class="text-center text-md font-normal" style="font-weight:500">Share on
+                                            WhatsApp</h1>
+                                    </div>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.70714 1.29297L5.06069 1.64652L11.0607 7.64652V8.35363L5.06069 14.3536L4.70714 14.7072L4.00003 14.0001L4.35358 13.6465L10 8.00008L4.35358 2.35363L4.00003 2.00008L4.70714 1.29297Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a target="_blank"
+                                href="mailto:?subject=Check%20out%20this%20profile%20link!&body=https%3A%2F%2Fsameerchauhan.in%2F">
+                                <div class="flex flex-row mx-auto w-10/12 justify-between items-center hover:bg-[#f6f4f4] px-[8px] mb-[10px]"
+                                    style="border-radius:10px;">
+                                    <div class="flex flex-row gap-[8px] my-auto items-center px-[5px] py-[5px]">
+                                        <div class="w-fit h-fit p-2 rounded-full border-1 bg-white"
+                                            style="border:1px solid #dddddd;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Mail" width="20"
+                                                height="20" viewBox="0 0 512 512" id="mail">
+                                                <rect width="512" height="512" fill="#328cff" rx="15%"></rect>
+                                                <path fill="#fff"
+                                                    d="m250 186c-46 0-69 35-69 74 0 44 29 72 68 72 43 0 73-32 73-75 0-44-34-71-72-71zm-1-37c30 0 57 13 77 33 0-22 35-22 35 1v150c-1 10 10 16 16 9 25-25 54-128-14-187-64-56-149-47-195-15-48 33-79 107-49 175 33 76 126 99 182 76 28-12 41 26 12 39-45 19-168 17-225-82-38-68-36-185 67-248 78-46 182-33 244 32 66 69 62 197-2 246-28 23-71 1-71-32v-11c-20 20-47 32-77 32-57 0-108-51-108-108 0-58 51-110 108-110">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <h1 class="text-center text-md font-normal" style="font-weight:500">Share via
+                                            Mail</h1>
+                                    </div>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.70714 1.29297L5.06069 1.64652L11.0607 7.64652V8.35363L5.06069 14.3536L4.70714 14.7072L4.00003 14.0001L4.35358 13.6465L10 8.00008L4.35358 2.35363L4.00003 2.00008L4.70714 1.29297Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="mx-auto w-10/12 items-center px-[8px] mb-[10px]" style="border-radius:10px;">
+                                <div class="flex justify-between items-center gap-[5px]">
+                                    <div class="flex flex-row items-center gap-[2px] rounded-lg py-[7px] px-3 overflow-hidden w-full"
+                                        style="border: 2px solid #6C27AF;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#6563ff"
+                                                d="M10 17H7A5 5 0 0 1 7 7h3a1 1 0 0 1 0 2H7a3 3 0 0 0 0 6h3a1 1 0 0 1 0 2zm7 0h-3a1 1 0 0 1 0-2h3a3 3 0 0 0 0-6h-3a1 1 0 0 1 0-2h3a5 5 0 0 1 0 10z">
+                                            </path>
+                                            <path fill="#b2b1ff" d="M15 13H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z"></path>
+                                        </svg>
+                                        <a id="link" href="https://sameerchauhan.in/"
+                                            class="font-medium text-sm">sameerchauhan.in</a>
+                                    </div>
+                                    <button id="copyButton"
+                                        class="items-center justify-center rounded-lg px-5 py-3 bg-gradient-to-r from-purple-600 to-pink-600  text-base font-medium  text-white transition duration-300 ease-out hover:scale-105 hover:shadow-orange-600 active:translate-y-1"
+                                        onclick="copyLinkToClipboard()">Copy
+                                    </button>
+                                </div>
+
+                                <script>
+                                    function copyLinkToClipboard() {
+                                        const link = document.getElementById('link');
+                                        const copyButton = document.getElementById('copyButton');
+
+                                        // Create a temporary textarea to copy the link
+                                        const tempTextArea = document.createElement('textarea');
+                                        tempTextArea.value = link.href;
+                                        document.body.appendChild(tempTextArea);
+                                        tempTextArea.select();
+                                        document.execCommand('copy');
+                                        document.body.removeChild(tempTextArea);
+
+                                        // Change the button text to "Copied"
+                                        copyButton.innerText = 'Copied';
+
+                                        // Reset the button text after a short delay
+                                        setTimeout(() => {
+                                            copyButton.innerText = 'Copy';
+                                        }, 2000);
+                                    }                                      
+                                </script>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const dropdownButton = document.getElementById('dropdownButton');
+                        const dropdownMenu = document.getElementById('dropdownMenu');
+
+                        dropdownButton.addEventListener('click', () => {
+                            dropdownMenu.classList.toggle('hidden');
+                        });
+
+                        document.addEventListener('click', (event) => {
+                            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                                dropdownMenu.classList.add('hidden');
+                            }
+                        });
+                    });
+                </script>
             </div>
             <div>
                 <img src="assets/img/profile.png" alt="profile" class="w-[100px] mx-auto" />
@@ -102,7 +290,12 @@
             <div class="flex flex-row gap-[30px] mx-auto mt-[20px]">
                 <a class="hover:scale-[1.2] hover:duration-300" target="_blank"
                     href="https://wa.me/message/UUQHI6PMGSTNC1">
-                    <svg class="social-icon-fill" width="23" height="23" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.250021 15C0.250021 6.8538 6.85382 0.25 15 0.25C23.1462 0.25 29.75 6.8538 29.75 15C29.75 23.1462 23.1462 29.75 15 29.75C11.8477 29.75 8.92465 28.7603 6.52704 27.075L1.33543 29.6708C1.04669 29.8152 0.697961 29.7586 0.469691 29.5303C0.24142 29.3021 0.18483 28.9533 0.3292 28.6646L2.92501 23.473C1.23969 21.0754 0.250021 18.1523 0.250021 15ZM15 1.75C7.68225 1.75 1.75002 7.68223 1.75002 15C1.75002 17.9841 2.73558 20.7358 4.39925 22.9503L4.67791 23.3213L2.67707 27.3229L6.67875 25.3221L7.04968 25.6008C9.26424 27.2644 12.016 28.25 15 28.25C22.3178 28.25 28.25 22.3178 28.25 15C28.25 7.68223 22.3178 1.75 15 1.75ZM11.7687 10.1744C11.6196 9.27965 10.5971 8.83667 9.84237 9.33982L9.75002 9.40139V11C9.75002 12.03 9.91836 13.0206 10.229 13.9459L11.508 13.0933C11.9173 12.8204 12.1285 12.3329 12.0476 11.8477L11.7687 10.1744ZM10.8326 15.3463L12.3401 14.3414C13.2405 13.7411 13.7051 12.6686 13.5272 11.6011L13.2483 9.92778C12.9203 7.95938 10.6707 6.98481 9.01032 8.09174L8.584 8.37596C8.37535 8.51506 8.25002 8.74924 8.25002 9V11C8.25002 16.9371 13.063 21.75 19 21.75H21C21.2508 21.75 21.485 21.6247 21.6241 21.416L21.9083 20.9897C23.0152 19.3293 22.0406 17.0798 20.0722 16.7517L18.3989 16.4728C17.3315 16.2949 16.2589 16.7596 15.6587 17.66L14.6537 19.1674C13.0317 18.3024 11.6976 16.9683 10.8326 15.3463ZM16.0541 19.771C16.9794 20.0817 17.9701 20.25 19 20.25H20.5986L20.6602 20.1576C21.1634 19.4029 20.7204 18.3804 19.8256 18.2313L18.1523 17.9524C17.6671 17.8715 17.1796 18.0827 16.9067 18.492L16.0541 19.771Z" fill="white"></path></svg>
+                    <svg class="social-icon-fill" width="24" height="24" viewBox="0 0 30 30" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.250021 15C0.250021 6.8538 6.85382 0.25 15 0.25C23.1462 0.25 29.75 6.8538 29.75 15C29.75 23.1462 23.1462 29.75 15 29.75C11.8477 29.75 8.92465 28.7603 6.52704 27.075L1.33543 29.6708C1.04669 29.8152 0.697961 29.7586 0.469691 29.5303C0.24142 29.3021 0.18483 28.9533 0.3292 28.6646L2.92501 23.473C1.23969 21.0754 0.250021 18.1523 0.250021 15ZM15 1.75C7.68225 1.75 1.75002 7.68223 1.75002 15C1.75002 17.9841 2.73558 20.7358 4.39925 22.9503L4.67791 23.3213L2.67707 27.3229L6.67875 25.3221L7.04968 25.6008C9.26424 27.2644 12.016 28.25 15 28.25C22.3178 28.25 28.25 22.3178 28.25 15C28.25 7.68223 22.3178 1.75 15 1.75ZM11.7687 10.1744C11.6196 9.27965 10.5971 8.83667 9.84237 9.33982L9.75002 9.40139V11C9.75002 12.03 9.91836 13.0206 10.229 13.9459L11.508 13.0933C11.9173 12.8204 12.1285 12.3329 12.0476 11.8477L11.7687 10.1744ZM10.8326 15.3463L12.3401 14.3414C13.2405 13.7411 13.7051 12.6686 13.5272 11.6011L13.2483 9.92778C12.9203 7.95938 10.6707 6.98481 9.01032 8.09174L8.584 8.37596C8.37535 8.51506 8.25002 8.74924 8.25002 9V11C8.25002 16.9371 13.063 21.75 19 21.75H21C21.2508 21.75 21.485 21.6247 21.6241 21.416L21.9083 20.9897C23.0152 19.3293 22.0406 17.0798 20.0722 16.7517L18.3989 16.4728C17.3315 16.2949 16.2589 16.7596 15.6587 17.66L14.6537 19.1674C13.0317 18.3024 11.6976 16.9683 10.8326 15.3463ZM16.0541 19.771C16.9794 20.0817 17.9701 20.25 19 20.25H20.5986L20.6602 20.1576C21.1634 19.4029 20.7204 18.3804 19.8256 18.2313L18.1523 17.9524C17.6671 17.8715 17.1796 18.0827 16.9067 18.492L16.0541 19.771Z"
+                            fill="white"></path>
+                    </svg>
                 </a>
                 <a class="hover:scale-[1.2] hover:duration-300" target="_blank" href="https://twitter.com/samunicode">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -143,7 +336,7 @@
             </div>
             <div class="mt-[40px]">
                 <p
-                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm font-semibold tracking-[4px] text-gray-300">
+                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm tracking-[4px] text-gray-300">
                     FEATURED LINKS</p>
             </div>
             <div class="flex flex-col mt-[20px] gap-[20px] lg:w-9/12 w-full mx-auto">
@@ -240,7 +433,7 @@
             </div>
             <div class="mt-[40px]">
                 <p
-                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] font-semibold text-sm tracking-[4px] text-gray-300">
+                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm tracking-[4px] text-gray-300">
                     SOCIAL LINKS</p>
             </div>
             <div class="flex flex-col mt-[20px] gap-[20px] lg:w-9/12 w-full mx-auto">
@@ -307,7 +500,7 @@
             </div>
             <div class="mt-[40px]">
                 <p
-                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] font-semibold text-sm tracking-[4px] text-gray-300">
+                    class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[17px] text-sm tracking-[4px] text-gray-300">
                     PROJECT LINKS</p>
             </div>
             <div class="flex flex-col mt-[20px] gap-[20px] lg:w-9/12 w-full mx-auto">
