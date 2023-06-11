@@ -1,4 +1,4 @@
-![2023-06-10 18_24_01-Settings](https://github.com/samunicode/Lynkly/assets/91241984/3d89f401-9aae-4884-8db5-f51cf74b5fe6)
+Uploading 2023-06-11 23-10-42.mp4…
 # Lynkly
 
 Lynkly is a clone of the popular Linktree service, built using Tailwind CSS, HTML, and CSS. This project aims to provide a simple and customizable solution for creating your own personal landing page with multiple links.
