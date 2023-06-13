@@ -216,7 +216,7 @@
                             </a>
                             <div class="mx-auto w-10/12 items-center px-[8px] mb-[10px]" style="border-radius:10px;">
                                 <div class="flex justify-between items-center gap-[5px]">
-                                    <div class="flex flex-row items-center gap-[2px] rounded-lg py-[7px] px-3 overflow-hidden w-full"
+                                    <div class="flex flex-row items-center gap-[2px] rounded-lg py-[7px] px-3 overflow-hidden w-full hover:shadow-lg hover:shadow-[#6025F5]/50"
                                         style="border: 2px solid #6C27AF;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             viewBox="0 0 24 24">
@@ -229,7 +229,7 @@
                                             class="font-medium text-sm">sameerchauhan.in</a>
                                     </div>
                                     <button id="copyButton"
-                                        class="items-center justify-center rounded-lg px-5 py-3 bg-gradient-to-r from-purple-600 to-pink-600  text-base font-medium  text-white transition duration-300 ease-out hover:scale-105 hover:shadow-orange-600 active:translate-y-1"
+                                        class="items-center justify-center rounded-lg px-5 py-3 bg-gradient-to-r from-purple-600 to-pink-600  text-base font-medium  text-white transition duration-300 ease-out hover:scale-105 hover:shadow-lg hover:shadow-[#6025F5]/50 active:translate-y-1"
                                         onclick="copyLinkToClipboard()">Copy
                                     </button>
                                 </div>
@@ -238,19 +238,13 @@
                                     function copyLinkToClipboard() {
                                         const link = document.getElementById('link');
                                         const copyButton = document.getElementById('copyButton');
-
-                                        // Create a temporary textarea to copy the link
                                         const tempTextArea = document.createElement('textarea');
                                         tempTextArea.value = link.href;
                                         document.body.appendChild(tempTextArea);
                                         tempTextArea.select();
                                         document.execCommand('copy');
                                         document.body.removeChild(tempTextArea);
-
-                                        // Change the button text to "Copied"
                                         copyButton.innerText = 'Copied';
-
-                                        // Reset the button text after a short delay
                                         setTimeout(() => {
                                             copyButton.innerText = 'Copy';
                                         }, 2000);
