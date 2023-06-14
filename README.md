@@ -1,7 +1,7 @@
 <p
 align="center">
   <img width="75%" src="https://github.com/samunicode/Lynkly/assets/91241984/d2d1e156-dab5-4158-8d99-d74ba8217d18" />
-  <img width="23%" src="https://github.com/samunicode/Lynkly/assets/91241984/f40c260e-fd34-4447-afd2-c199473cc0c0" />
+  <img width="23%" src="https://github.com/samunicode/Lynkly/assets/91241984/1bfcf430-6c0f-4d1a-934b-ad429fe7fa82" />
 </p>
 
 # Lynkly
