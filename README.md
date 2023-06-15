@@ -26,7 +26,8 @@ Lynkly is a clone of the popular Linktree service, built using Tailwind CSS, HTM
 
 ## Demo
 
-You can view a live demo of the project [here](https://lynkly.vercel.app/).
+You can view a live demo of the project deployed on Vercel [lynkly.vercel.app](https://lynkly.vercel.app/).
+You can also view the example version of this project at [sameerchauhan.in](https://sameerchauhan.in/).
 
 ## Technologies Used
 
