@@ -231,7 +231,6 @@
                                         onclick="copyLinkToClipboard()">Copy
                                     </button>
                                 </div>
-
                                 <script>
                                     function copyLinkToClipboard() {
                                         const link = document.getElementById('link');
@@ -257,32 +256,39 @@
                         const dropdownButton = document.getElementById('dropdownButton');
                         const dropdownMenu = document.getElementById('dropdownMenu');
                         dropdownButton.addEventListener('click', () => {
-                            dropdownMenu.classList.toggle('hidden');
-                            setTimeout(() => {
-                                dropdownMenu.classList.toggle('active');
-                            }, 10);
+                            if (dropdownMenu.classList.contains('hidden')) {
+                                dropdownMenu.classList.remove('hidden');
+                                setTimeout(() => {
+                                    dropdownMenu.classList.add('active');
+                                }, 10);
+                            } else {
+                                dropdownMenu.classList.remove('active');
+                                setTimeout(() => {
+                                    dropdownMenu.classList.add('hidden');
+                                }, 300); // delay the addition of 'hidden' class
+                            }
                         });
                         document.addEventListener('click', (event) => {
                             if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
                                 dropdownMenu.classList.remove('active');
                                 setTimeout(() => {
                                     dropdownMenu.classList.add('hidden');
-                                }, 100);
+                                }, 300); // delay the addition of 'hidden' class
                             }
                         });
-                    });
-                </script>
+                    });                                     
+                </script>     
                 <style>
                     .dropdown-menu {
                         opacity: 0;
                         visibility: hidden;
-                        transition: opacity 0.2s ease-in-out;
+                        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
                     }
                     .dropdown-menu.active {
                         opacity: 1;
                         visibility: visible;
-                    }
-                </style>                               
+                    }                    
+                </style>                    
             </div>
             <div>
                 <img src="assets/img/profile_new.png" alt="profile" class="w-[100px] mx-auto" />
