@@ -97,8 +97,8 @@
                             </defs>
                         </svg>
                     </div>
-                    <div id="dropdownMenu" class="absolute mx-auto mt-2 lg:w-7/12 w-full bg-white shadow-lg hidden"
-                        style="border-radius:20px;">
+                    <div id="dropdownMenu" class="dropdown-menu absolute mx-auto mt-2 lg:w-7/12 w-full bg-white shadow-lg hidden" 
+    style="border-radius:20px;">
                         <div class="flex flex-col py-[30px]">
                             <h1 class="text-center font-semibold text-lg pb-[20px]">Share this Profile Link</h1>
                             <div class="shadow-xl shadow-[#6025F5]/25 w-9/12 mx-auto mb-[30px]"
@@ -256,18 +256,33 @@
                     document.addEventListener('DOMContentLoaded', () => {
                         const dropdownButton = document.getElementById('dropdownButton');
                         const dropdownMenu = document.getElementById('dropdownMenu');
-
                         dropdownButton.addEventListener('click', () => {
                             dropdownMenu.classList.toggle('hidden');
+                            setTimeout(() => {
+                                dropdownMenu.classList.toggle('active');
+                            }, 10);
                         });
-
                         document.addEventListener('click', (event) => {
                             if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                                dropdownMenu.classList.add('hidden');
+                                dropdownMenu.classList.remove('active');
+                                setTimeout(() => {
+                                    dropdownMenu.classList.add('hidden');
+                                }, 100);
                             }
                         });
                     });
                 </script>
+                <style>
+                    .dropdown-menu {
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.2s ease-in-out;
+                    }
+                    .dropdown-menu.active {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                </style>                               
             </div>
             <div>
                 <img src="assets/img/profile_new.png" alt="profile" class="w-[100px] mx-auto" />
