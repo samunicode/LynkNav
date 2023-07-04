@@ -38,6 +38,17 @@
             position: relative;
             background-color: black;
         }
+        
+        body::-webkit-scrollbar {
+            width: 5px;
+            background: #ffffff00;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #00aeff, #043375);
+        }
 
         body::before {
             content: "";
@@ -602,11 +613,24 @@
                     SAMEER'S MIXTAPE</p>
             </div>
             <div class="flex flex-col mt-[20px] gap-[20px] lg:w-9/12 w-full mx-auto">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1q6TQaIXCLhvMvCKQVJUcl?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <iframe  id="spotify"  style="border-radius:14px;" src="https://open.spotify.com/embed/playlist/1q6TQaIXCLhvMvCKQVJUcl?utm_source=generator&theme=0" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 <div class="flex flex-col gap-[6px] mt-8 mb-8">
                     <p class="text-center mt-2 lg:w-9/12 w-full mx-auto lg:text-[16px] text-md text-gray-200">
                         Crafted with ❤️ by <span class="font-semibold">Sameer Chauhan</span></p>
                 </div>
+                <style>
+                    @media (max-width: 1023px) {
+                        #spotify {
+                            height: 152px;
+                        }
+                    }
+
+                    @media (min-width: 1024px) {
+                        #spotify {
+                            height: 352px;
+                        }
+                    }
+                </style>
             </div>
         </div>
     </div>
