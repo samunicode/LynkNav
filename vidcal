@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Speed Calculator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="number"] {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .result div {
+            padding: 10px;
+            background: #e9f5ff;
+            border: 1px solid #b3e5ff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Speed Calculator</h1>
+        <div class="input-group">
+            <label for="hours">Hours:</label>
+            <input type="number" id="hours" min="0">
+        </div>
+        <div class="input-group">
+            <label for="minutes">Minutes:</label>
+            <input type="number" id="minutes" min="0" max="59">
+        </div>
+        <button id="calculateBtn">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('calculateBtn').addEventListener('click', calculateTime);
+
+        function calculateTime() {
+            const hours = parseInt(document.getElementById('hours').value) || 0;
+            const minutes = parseInt(document.getElementById('minutes').value) || 0;
+
+            const totalMinutes = hours * 60 + minutes;
+
+            const speeds = [1.25, 1.5, 1.75, 2];
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+
+            speeds.forEach(speed => {
+                const newTime = totalMinutes / speed;
+                const newHours = Math.floor(newTime / 60);
+                const newMinutes = Math.round(newTime % 60);
+
+                const result = document.createElement('div');
+                result.innerText = `At ${speed}x speed: ${newHours} hours ${newMinutes} minutes`;
+                resultDiv.appendChild(result);
+            });
+        }
+    </script>
+</body>
+</html>
