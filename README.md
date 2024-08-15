@@ -26,8 +26,7 @@ LynkNav is a clone of the popular Linktree service, built using Tailwind CSS, HT
 
 ## Demo
 
-You can view a live demo of the project deployed on Vercel [LynkNav.vercel.app](https://LynkNav.vercel.app/).
-You can also view the example version of this project at [sameerchauhan.in](https://sameerchauhan.in/).
+You can also view the example version of this project at [sameer.nz](https://sameer.nz/).
 
 ## Technologies Used
 
