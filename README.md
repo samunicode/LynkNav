@@ -1,12 +1,12 @@
 <p
 align="center">
-  <img width="72%" src="https://github.com/samunicode/Lynkly/assets/91241984/898fc1a7-175c-4af8-b653-a7e72d69f43b" />
-  <img width="25%" src="https://github.com/samunicode/Lynkly/assets/91241984/1d35ffb1-7f63-4827-80a5-9cb399dca826" />
+  <img width="72%" src="https://github.com/samunicode/LynkNav/assets/91241984/898fc1a7-175c-4af8-b653-a7e72d69f43b" />
+  <img width="25%" src="https://github.com/samunicode/LynkNav/assets/91241984/1d35ffb1-7f63-4827-80a5-9cb399dca826" />
 </p>
 
-# Lynkly
+# LynkNav
 
-Lynkly is a clone of the popular Linktree service, built using Tailwind CSS, HTML, and CSS. This project aims to provide a simple and customizable solution for creating your own personal landing page with multiple links.
+LynkNav is a clone of the popular Linktree service, built using Tailwind CSS, HTML, and CSS. This project aims to provide a simple and customizable solution for creating your own personal landing page with multiple links.
 
 ## Features
 
@@ -26,7 +26,7 @@ Lynkly is a clone of the popular Linktree service, built using Tailwind CSS, HTM
 
 ## Demo
 
-You can view a live demo of the project deployed on Vercel [lynkly.vercel.app](https://lynkly.vercel.app/).
+You can view a live demo of the project deployed on Vercel [LynkNav.vercel.app](https://LynkNav.vercel.app/).
 You can also view the example version of this project at [sameerchauhan.in](https://sameerchauhan.in/).
 
 ## Technologies Used
@@ -40,8 +40,8 @@ You can also view the example version of this project at [sameerchauhan.in](http
 To run this project locally, you can clone the repository and open the `index.html` file in your browser:
 
 ```
-git clone https://github.com/samunicode/Lynkly.git
-cd Lynkly
+git clone https://github.com/samunicode/LynkNav.git
+cd LynkNav
 open index.html
 ```
 
